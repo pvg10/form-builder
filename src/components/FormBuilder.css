@@ -6,6 +6,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
+  width: 100%;
   margin: 2rem auto;
 }
 
@@ -104,18 +105,32 @@ select {
 /* ===== Responsive (Mobile First) ===== */
 
 @media (max-width: 600px) {
-  .form-container {
+    body {
+          overflow-x: hidden; /* Prevents horizontal scroll */
+
+    }
+.form-container {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
+    width: 95%;
   }
+
 
   .form-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
-  .submit-button {
-    font-size: 0.95rem;
-    padding: 10px 20px;
+  .submit-button,
+  .reset-button {
+    font-size: 1rem;
+    padding: 10px 16px;
+    width: 100%;
   }
-  
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    font-size: 1rem;
+  }
 }
