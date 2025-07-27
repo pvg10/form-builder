@@ -11,7 +11,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Dynamic Form Builder</h1>
       {loading ? (
         <p>Loading schema...</p>
       ) : schema ? (
