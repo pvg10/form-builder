@@ -1,12 +1,18 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #eef2f7;
-  padding: 40px;
   margin: 0;
+  padding: 2rem;
+  background-color: #eef2f7;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.3rem;
+    overflow-x: hidden;
+  }
 }
 
 .app {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
 }
 
@@ -23,7 +29,8 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input, select {
+input,
+select {
   display: block;
   margin-top: 6px;
   margin-bottom: 20px;
@@ -35,7 +42,8 @@ input, select {
   transition: border-color 0.3s;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   border-color: #007BFF;
   outline: none;
 }
