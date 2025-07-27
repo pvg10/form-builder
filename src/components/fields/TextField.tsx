@@ -35,7 +35,7 @@ const TextField = ({ field, value, onChange, error }: Props) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-      <label htmlFor={field.id} style={{ fontWeight: 500 }}>{field.label}</label>
+      <label className={field.required ? 'required' : ''}>{field.label}</label>
       <input
         id={field.id}
         type={inputType}

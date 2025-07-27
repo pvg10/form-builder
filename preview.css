@@ -40,10 +40,10 @@ input:focus, select:focus {
   outline: none;
 }
 
-label {
+/* label {
   font-weight: 600;
   color: #333;
-}
+} */
 
 button {
   padding: 12px 24px;

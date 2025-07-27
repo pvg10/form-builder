@@ -9,7 +9,7 @@ type Props = {
 
 const SelectField = ({ field, value, onChange, error }: Props) => (
   <div>
-    <label>{field.label}</label>
+    <label className={field.required ? 'required' : ''}>{field.label}</label>
     <select value={value || ''} onChange={(e) => onChange(e.target.value)}>
       <option value="">-- Select --</option>
       {field.options?.map(opt => (
